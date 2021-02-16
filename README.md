@@ -7,7 +7,7 @@ My simple setup
 
 - Install Oh-My-ZSH
   `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-- Make it as default shell
+- Make zsh as default shell (if needed)
   `sudo chsh -s $(which zsh)`
 - Make symlink for .zshrc && .gitconfig
   `ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc`
