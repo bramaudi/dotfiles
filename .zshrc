@@ -107,3 +107,16 @@ alias killftp="killall gvfsd-ftp"
 # nvm
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# flutter
+export PATH="$PATH:$HOME/Development/flutter/bin"
+
+# Android SDK
+export ANDROID_SDK_ROOT="$HOME/Android/Sdk"
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/brama/.sdkman"
+[[ -s "/home/brama/.sdkman/bin/sdkman-init.sh" ]] && source "/home/brama/.sdkman/bin/sdkman-init.sh"
+
+# Deno
+export DENO_INSTALL="/home/brama/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
