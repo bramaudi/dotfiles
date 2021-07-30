@@ -17,7 +17,7 @@ font pango:Inter 10
 
 ##### i3-gaps ##############
 for_window [class=".*"] border pixel 2
-gaps inner 10
+gaps inner 5
 gaps outer 1
 #smart_borders on
 #smart_gaps on
