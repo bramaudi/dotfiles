@@ -7,7 +7,7 @@ Here just my dotfiles backup
 First install required package:
 
 ```
-sudo apt install feh compton numlockx polybar i3 lxappearance fonts-material-design-icons-iconfont 
+sudo apt install feh compton numlockx polybar i3 lxappearance fonts-material-design-icons-iconfont deepin-screenshot xfce4-clipman 
 
 ```
 

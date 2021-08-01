@@ -222,7 +222,8 @@ hide_edge_borders both
 # ==================
 bindsym $mod+d exec rofi -show combi
 
-bindsym $mod+p exec gnome-screenshot -i
+#bindsym $mod+p exec gnome-screenshot -i
+bindsym $mod+p exec deepin-screenshot
 
 # shutdown / restart / suspend...
 #set $mode_system 
@@ -256,6 +257,9 @@ exec xinput set-prop 'YSPRINGTECH USB OPTICAL MOUSE' 308 1
 
 # Trun on numlock
 exec numlockx on
+
+# Start clipman for deepin-screenshot
+exec xfce4-clipman
 
 # Scale display
 #exec xrandr --output VGA-1 --scale 1.1x1.1
