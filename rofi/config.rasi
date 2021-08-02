@@ -1,0 +1,78 @@
+configuration {
+  display-run: " ";
+  display-drun: "  ";
+  display-window: "  ";
+  display-combi: "  ";
+  drun-display-format: "{icon} {name}";
+  font: "Inter 10";
+  modi: "window,run,drun,combi";
+  show-icons: true;
+  icon-theme: "Papirus";
+  combi-modi: "window,drun,run";
+}
+
+* {
+  fg: #f8f8f2;
+
+  background-color: #270D2D88;
+  border-color: #C026C6;
+  
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+}
+
+element {
+  padding: 12;
+  orientation: horizontal;
+  text-color: #af7fb8;
+  vertical-align: 1.0;
+}
+
+element selected {
+  text-color: #fff;
+  background-color: #472D4D88;
+}
+
+element-icon {
+  size: 18;
+  border: 0;
+  padding: 0 10 0 0;
+}
+
+entry {
+  expand: true;
+  background-color: #C026C6aa;
+  padding: 12 0 12 3;
+  text-color: @fg;
+}
+
+inputbar {
+  children: [prompt, entry];
+}
+
+listview {
+  columns: 1;
+  lines: 8;
+}
+
+mainbox {
+  children: [inputbar, listview];
+  border: 2;
+}
+
+prompt {
+  background-color: #C026C6aa;
+  enabled: true;
+  font: "Material Icons 12";
+  padding: 12 0 0 12;
+  text-color: @fg;
+}
+
+window {
+  fullscreen: true;
+  background-color: #7C2E70aa;
+  width: 100;
+  padding: 200 300;
+}
