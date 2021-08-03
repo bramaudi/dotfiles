@@ -26,7 +26,7 @@ gaps outer 1
 ################# i3-radius #######################
 #smart_border on
 #smart_borders no_gaps
-#border_radius 5
+border_radius 5
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).

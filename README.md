@@ -7,7 +7,7 @@ Here just my dotfiles backup
 First install required package:
 
 ```
-sudo apt install feh compton numlockx polybar i3 lxappearance fonts-material-design-icons-iconfont deepin-screenshot xfce4-clipman 
+sudo apt install feh compton numlockx polybar i3 rofi lxappearance papirus-icon-theme fonts-material-design-icons-iconfont deepin-screenshot xfce4-clipman 
 
 ```
 
@@ -23,6 +23,7 @@ Make symlink
 ```
 cd $HOME && \
 ln -s $HOME/.dotfiles/i3 .config/i3 && \
+ln -s $HOME/.dotfiles/rofi .config/rofi && \
 ln -s $HOME/.dotfiles/fonts .fonts && \
 ln -s $HOME/.dotfiles/.gitconfig .gitconfig
 ```
