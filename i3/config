@@ -26,7 +26,7 @@ gaps outer 1
 ################# i3-radius #######################
 #smart_border on
 #smart_borders no_gaps
-border_radius 5
+#border_radius 5
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -250,13 +250,13 @@ bindsym $mod+BackSpace exec "i3-nagbar -t warning -m 'System (l) lock, (e) logou
 exec_always --no-startup-id /home/brama/.dotfiles/polybar/launch.sh
 
 # Wallpaper
-exec_always feh --bg-scale $HOME/.dotfiles/wallpaper.jpg
+exec_always feh --bg-fill $HOME/.dotfiles/wallpaper.jpg
 
 # Emulate mouse middle click
-exec xinput set-prop 'YSPRINGTECH USB OPTICAL MOUSE' 308 1
+exec xinput set-prop 'YSPRINGTECH USB OPTICAL MOUSE' 'libinput Middle Emulation Enabled' 1
 
 # Trun on numlock
-exec numlockx on
+exec numlockx off
 
 # Start clipman for deepin-screenshot
 exec_always xfce4-clipman
