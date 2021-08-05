@@ -261,7 +261,7 @@ exec_always --no-startup-id /home/brama/.dotfiles/polybar/launch.sh
 exec_always feh --bg-fill $HOME/.dotfiles/wallpaper.jpg
 
 # Emulate mouse middle click
-exec xinput set-prop 'YSPRINGTECH USB OPTICAL MOUSE' 'libinput Middle Emulation Enabled' 1
+exec_always xinput set-prop 'YSPRINGTECH USB OPTICAL MOUSE' 'libinput Middle Emulation Enabled' 1
 
 # Trun on numlock
 exec numlockx off
