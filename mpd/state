@@ -1,0 +1,24 @@
+sw_volume: 68
+audio_device_state:1:Pulse Audio
+audio_device_state:1:my_fifo
+state: play
+current: 1
+time: 4.034000
+random: 0
+repeat: 1
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:calvin harris ft. rihanna- this is what you came for slowed reverb.opus
+1:fousheé - deep end (slowed down to perfection reverb) lyrics.opus
+2:Sadness And Sorrow_Iyuz Misterius Koplo Akustik Versi Slow.opus
+3:🌹 Eminem ft. Rihanna _ Love The Way You Lie _ slowed reverb 🌹.opus
+4:Giorno's Theme but it's SMOOTH LOFI HIP HOP (Chill Beats to Have a Dream to).opus
+5:Stick Figure - World On Fire Remix (Feat. The Green, Tribal Seeds, Common Kings .opus
+6:Arash ft. Helena - Broken Angel (Slowed).opus
+7:JJ - Still Full HD (Remix by ME2).opus
+8:Emma Peters - Clandestina (Tommy Driker Remix).opus
+playlist_end
