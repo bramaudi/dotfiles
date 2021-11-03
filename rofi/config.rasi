@@ -23,46 +23,71 @@ configuration {
   spacing: 0;
 }
 
-element {
-  padding: 12;
+#element {
+  padding: 8;
   orientation: horizontal;
   text-color: #af7fb8;
   vertical-align: 1.0;
 }
 
-element selected {
+#element.selected.normal {
   text-color: #fff;
   background-color: #472D4D88;
 }
+#element.selected.active {
+  background-color: #7C2E70aa;
+  text-color: #fff;
+}
 
-element-icon {
+#element.normal.normal {
+  background-color: inherit;
+  text-color: #f8f8f8;
+}
+#element.alternate.normal {
+  background-color: inherit;
+  text-color: #f8f8f8;
+}
+
+#element.normal.active {
+  background-color: #C026C688;
+  text-color: #f8f8f8;
+}
+
+#scrollbar {
+  width:        0;
+  border:       0;
+  handle-width: 0;
+  padding:      0;
+}
+
+#element-icon {
   size: 18;
   border: 0;
   padding: 0 10 0 0;
 }
 
-entry {
+#entry {
   expand: true;
   background-color: #C026C6aa;
   padding: 12 0 12 3;
   text-color: @fg;
 }
 
-inputbar {
+#inputbar {
   children: [prompt, entry];
 }
 
-listview {
+#listview {
   columns: 1;
   lines: 8;
 }
 
-mainbox {
+#mainbox {
   children: [inputbar, listview];
   border: 2;
 }
 
-prompt {
+#prompt {
   background-color: #C026C6aa;
   enabled: true;
   font: "Material Icons 12";
@@ -70,9 +95,9 @@ prompt {
   text-color: @fg;
 }
 
-window {
+#window {
   fullscreen: true;
   background-color: #7C2E70aa;
   width: 100;
-  padding: 200 300;
+  padding: 230 300;
 }
