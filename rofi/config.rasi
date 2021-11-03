@@ -71,6 +71,7 @@ configuration {
   background-color: #C026C6aa;
   padding: 12 0 12 3;
   text-color: @fg;
+  placeholder-color: #aaa;
 }
 
 #inputbar {
@@ -80,6 +81,7 @@ configuration {
 #listview {
   columns: 1;
   lines: 8;
+  border: 0;
 }
 
 #mainbox {
