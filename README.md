@@ -7,9 +7,11 @@ Here just my dotfiles backup
 First install required package:
 
 ```
-sudo apt install feh compton numlockx polybar i3 rofi mpd ncmpcpp lxappearance papirus-icon-theme fonts-material-design-icons-iconfont deepin-screenshot xfce4-clipman 
+sudo apt install feh picom nnumlockx polybar i3-gaps rofi lxappearance deepin-screenshot xfce4-clipman 
 
 ```
+
+For the DE is using [Fluent](https://github.com/vinceliuice/Fluent-gtk-theme) theme.
 
 Clone repository
 
