@@ -19,15 +19,16 @@ Clone repository
 cd $HOME && git clone http://github.com/bramaudi/dotfiles .dotfiles
 ```
 
-
-Make symlink
+Enable touchpad tap in case not working
 
 ```
-cd $HOME && \
-ln -s $HOME/.dotfiles/i3 .config/i3 && \
-ln -s $HOME/.dotfiles/rofi .config/rofi && \
-ln -s $HOME/.dotfiles/fonts .fonts && \
-ln -s $HOME/.dotfiles/.gitconfig .gitconfig && \
-ln -s $HOME/.dotfiles/mpd .config/mpd && \
-ln -s $HOME/.dotfiles/ncmpcpp .config/ncmpcpp
+sudo mkdir -p /etc/X11/xorg.conf.d && sudo tee <<'EOF' /etc/X11/xorg.conf.d/90-touchpad.conf 1> /dev/null
+Section "InputClass"
+        Identifier "touchpad"
+        MatchIsTouchpad "on"
+        Driver "libinput"
+        Option "Tapping" "on"
+EndSection
+
+EOF
 ```
