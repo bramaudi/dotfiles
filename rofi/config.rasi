@@ -1,105 +1,99 @@
 configuration {
-  display-run: " ";
-  display-drun: "  ";
-  display-window: "  ";
-  display-combi: "  ";
-  drun-display-format: "{icon} {name}";
-  font: "Inter 10";
-  modi: "window,run,drun,combi";
-  show-icons: true;
-  icon-theme: "Papirus";
-  combi-modi: "window,drun,run";
+    modi:		   "window,run,drun";
+    combi-modi:		   "drun,run";
+    font:		   "Roboto Medium 10";
+    show-icons:		   true;
+    sidebar-mode: 	   false;
+    display-run:	   ">_";
+    display-drun:	   "";
+    display-window:	   "🖵";
+    display-combi:	   "";
+    drun-display-format:   "{icon} {name}";
 }
+
+@import "colors.rasi"
 
 * {
-  fg: #f8f8f2;
-
-  background-color: #270D2D88;
-  border-color: #C026C6;
-  
-  border: 0;
-  margin: 0;
-  padding: 0;
-  spacing: 0;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
 }
 
-#element {
-  padding: 8;
-  orientation: horizontal;
-  text-color: #af7fb8;
-  vertical-align: 1.0;
+
+window {
+    background-color:	@bg;
+    border: 		0;
 }
 
-#element.selected.normal {
-  text-color: #fff;
-  background-color: #472D4D88;
-}
-#element.selected.active {
-  background-color: #7C2E70aa;
-  text-color: #fff;
+prompt, entry { 
+    text-color:		@fg;
 }
 
-#element.normal.normal {
-  background-color: inherit;
-  text-color: #f8f8f8;
-}
-#element.alternate.normal {
-  background-color: inherit;
-  text-color: #f8f8f8;
+prompt {
+    font:		"Font Awesome 5 Free 11";
+    vertical-align:	0.5;
 }
 
-#element.normal.active {
-  background-color: #C026C688;
-  text-color: #f8f8f8;
+entry {
+    placeholder:	"Search Applications";
+    placeholder-color:	@fg;
+    font: 		"Roboto 11";
+    border-color:	@alt;
 }
 
-#scrollbar {
-  width:        0;
-  border:       0;
-  handle-width: 0;
-  padding:      0;
+inputbar {
+    spacing: 		16px;
+    padding:		12px 16px;
+    
+    children:		[prompt, entry];
 }
 
-#element-icon {
-  size: 18;
-  border: 0;
-  padding: 0 10 0 0;
+
+listview {
+   spacing:		4px;
+   lines:		10;
+   padding:		0 0 12px 0;
+   border: 		0;
 }
 
-#entry {
-  expand: true;
-  background-color: #C026C6aa;
-  padding: 12 0 12 3;
-  text-color: @fg;
-  placeholder-color: #aaa;
+scrollbar {
+    width: 		1px;
+    border:		0;
+    handle-width:	8px;
+    handle-color: 	@pr; 
+    padding:		0px;
+    background-color:	@alt;
 }
 
-#inputbar {
-  children: [prompt, entry];
+textbox {
+   text-color:		@fg;
+   padding:		12px 16px;
 }
 
-#listview {
-  columns: 1;
-  lines: 8;
-  border: 0;
+element {
+    padding:		8px 16px;
+    spacing:		16px;
+    border-radius: 	8px;
 }
 
-#mainbox {
-  children: [inputbar, listview];
-  border: 2;
+element.normal.normal, element.alternate.normal {
+    background-color: 	@bg;
+    text-color:		@fg;
 }
 
-#prompt {
-  background-color: #C026C6aa;
-  enabled: true;
-  font: "Material Icons 12";
-  padding: 12 0 0 12;
-  text-color: @fg;
+element.selected.normal {
+    background-color:	@pr;
+    text-color:		@bg;
 }
 
-#window {
-  fullscreen: true;
-  background-color: #7C2E70aa;
-  width: 100;
-  padding: 230 300;
+element.normal.urgent, 
+element.alternate.urgent,
+element.selected.urgent {
+    background-color:	@ur;
+    text-color:		@bg;
+}
+
+element.normal.active,
+element.alternate.active {
+    background-color: @fg;
 }
