@@ -7,8 +7,8 @@ set $mod Mod4
 for_window [class=".*"] border pixel 2
 gaps inner 5
 gaps outer 1
-#smart_borders on
-#smart_gaps on
+smart_borders on
+smart_gaps on
 #gaps horizontal 2
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
@@ -192,13 +192,22 @@ client.urgent		$c-bg-urgent	$c-bg-urgent	$c-text		$c-bg-urgent
 
 hide_edge_borders both
 
+### Application
+
+popup_during_fullscreen smart
+for_window [urgent=latest] focus
+
+for_window [class="Xfce4-screenshooter"] floating enable sticky enable focus
+
+
 ### Additional key binding ########
 
 # Open web browser
 bindsym $mod+b exec exo-open --launch WebBrowser
 
 # Take a screenshoot
-bindsym $mod+p exec xfce4-screenshooter
+bindsym $mod+p exec xfce4-screenshooter -f
+bindsym $mod+Shift+p exec xfce4-screenshooter
 
 # shutdown / restart / suspend...
 # Suspend on power button
