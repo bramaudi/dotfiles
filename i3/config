@@ -226,13 +226,16 @@ exec_always feh --bg-scale $HOME/.config/wallpaper.png
 exec_always xinput set-prop 'YSPRINGTECH USB OPTICAL MOUSE' 'libinput Middle Emulation Enabled' 1
 
 # Trun on numlock
-exec numlockx off
+#exec numlockx off
 
-# Start clipman for deepin-screenshot
-exec xfce4-clipman
+# Start clipman
+exec --no-startup-id xfce4-clipman
 
 # Xrandr
 #exec xrandr --output VGA-1 --scale 1.1x1.1
 #exec xrandr --output LVDS-1 --brightness 0.6
 
-exec_always picom
+# Thunar mount Drive
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
+exec --no-startup-id picom
